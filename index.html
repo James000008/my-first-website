@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel The World</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+
+    .hero-section {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Travel The World</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+  <!-- Destination Dropdown -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destination</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="asia.html">Asia</a></li>
+      <li><a class="dropdown-item" href="europe.html">Europe</a></li>
+      <li><a class="dropdown-item" href="africa.html">Africa</a></li>
+      <li><a class="dropdown-item" href="northamerica.html">North America</a></li>
+      <li><a class="dropdown-item" href="destinations/southamerica.html">South America</a></li>
+    </ul>
+  </li>
+
+   <!-- Hotel & Resort-->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hotel & Resort</a>
+    <ul class="dropdown-menu">
+   
+    </ul>
+  </li>
+
+  <!-- Travel Tips(Luxary Travel) -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Travel Tips</a>
+    <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="luxary.html">Luxary Travel</a></li>
+    </ul>
+  </li>
+ 
+
+  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+  <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+  <li class="nav-item"><a class="nav-link" href="reference.html">Reference</a></li>
+
+</ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-section text-center">
+  <div class="container">
+    <h1 class="fw-bold display-3">Travel The World</h1>
+    <p class="lead">Discover breathtaking destinations, cultures, and adventures</p>
+    <a href="destination.html" class="btn btn-primary btn-lg mt-3">Start Exploring</a>
+  </div>
+</header>
+
+<!-- Featured Highlights -->
+<section class="container my-5">
+  <h2 class="text-center fw-bold mb-5">Featured Highlights</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Adventure">
+        <div class="card-body">
+          <h5 class="card-title">Adventure Escapes</h5>
+          <p class="card-text">Experience mountains, oceans, forests, and thrilling landscapes.</p>
+          <a href="destination.html" class="btn btn-dark">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Tips">
+        <div class="card-body">
+          <h5 class="card-title">Travel Essentials</h5>
+          <p class="card-text">Packing ideas and smart tips for a worry-free travel journey.</p>
+          <a href="traveltip.html" class="btn btn-dark">Read Tips</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Photo Stories">
+        <div class="card-body">
+          <h5 class="card-title">Photo Stories</h5>
+          <p class="card-text">Beautiful photo collections from travelers around the world.</p>
+          <a href="gallery.html" class="btn btn-dark">View Gallery</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h3 class="fw-bold mb-3">Join Our Newsletter</h3>
+    <p>Stay updated with travel guides, tips, and new destinations around the globe.</p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-3 text-center">
+  <p class="mb-0">© 2025 Travel The World. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
