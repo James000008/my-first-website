@@ -1,332 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel The World</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Travel Asia</title>
-  </head>
-  <body>
-    <div class="container">
-    <!--This is start of my beaches-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html"><img src="Logo2.jpg"width=100px height="100px"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About us</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="destination.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="asia.html">Asia</a>
-          <a class="dropdown-item" href="europe.html">Europe</a>
-          <a class="dropdown-item" href="africa.html">Africa</a>
-          <a class="dropdown-item" href="northamerica.html">North America</a>
-          <a class="dropdown-item" href="southamerica.html">South America</a>
-         
-        </div>
-      </li>
-    
-      <li class="nav-item">
-        <a class="nav-link" href="reservation.html">Hotel and Resort</a>
-      </li>
-         <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Travel
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="Luxary.html">Luxary Travel</a>
-    
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="career.html">Career</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="reference.html">Reference</a>
-      </li>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+
+    .hero-section {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Travel The World</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+  <!-- Destination Dropdown -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destination</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="asia.html">Asia</a></li>
+      <li><a class="dropdown-item" href="europe.html">Europe</a></li>
+      <li><a class="dropdown-item" href="africa.html">Africa</a></li>
+      <li><a class="dropdown-item" href="northamerica.html">North America</a></li>
+      <li><a class="dropdown-item" href="destinations/southamerica.html">South America</a></li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+  </li>
+
+   <!-- Hotel & Resort-->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hotel & Resort</a>
+    <ul class="dropdown-menu">
+   
+    </ul>
+  </li>
+
+  <!-- Travel Tips(Luxary Travel) -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Travel Tips</a>
+    <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="luxary.html">Luxary Travel</a></li>
+    </ul>
+  </li>
+ 
+
+  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+  <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+  <li class="nav-item"><a class="nav-link" href="reference.html">Reference</a></li>
+
+</ul>
+
+    </div>
   </div>
 </nav>
-<!-- This is the end of my beaches -->
- <!-- This is the start of big area -->
-  <div class="jumbotron" style="background-image: url(Thailand.jpg); background-size: cover;">
-  <h1 style="text-shadow: black 2px 2px;"  class="display-4">Welcome to my Travel</h1>
-  <style>
-    .display-4{
-      font-size: xx-large;
-      color: aliceblue;
-     
-    }
 
-  </style>
-  <p style="text-shadow: black 2px 2px;" class="lead">Where the ocean meets your peace</p>
-  <style>
-    .lead{
-      color: aliceblue;
-      font-size: xx-large;
-    }
-  </style>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <style>
-    p{
-      color: aliceblue;
-    }
-  </style>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    <audio src="Music.mp3" controls></audio>
-  </p>
-</div>
- <!-- This is the end of my big area -->
- 
- <!-- This is the start of my slider -->
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="Philippines.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="Indonesia.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="Japan.jpg" alt="Third slide">
-    </div>
+<!-- Hero Section -->
+<header class="hero-section text-center">
+  <div class="container">
+    <h1 class="fw-bold display-3">Travel The World</h1>
+    <p class="lead">Discover breathtaking destinations, cultures, and adventures</p>
+    <a href="destination.html" class="btn btn-primary btn-lg mt-3">Start Exploring</a>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-  <!-- This is the end of my slider -->
-<hr>
- <!-- This is the start of card section -->
-    <div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="Singapore.jpg" alt="Card image cap"data-toggle="modal" data-target="#exampleModalLong">
+</header>
 
-    <div class="card-body">
-      <h5 class="card-title">Singapore</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <video width="320" height="246" controls>
-      <source src="Video.mp4" type="video/mp4">
-    </video>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="Korea.jpg" alt="Card image cap"data-toggle="modal1" data-target="#exampleModalLong">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="Philippines.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-</div>
+<!-- Featured Highlights -->
+<section class="container my-5">
+  <h2 class="text-center fw-bold mb-5">Featured Highlights</h2>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Adventure">
+        <div class="card-body">
+          <h5 class="card-title">Adventure Escapes</h5>
+          <p class="card-text">Experience mountains, oceans, forests, and thrilling landscapes.</p>
+          <a href="destination.html" class="btn btn-dark">Learn More</a>
+        </div>
       </div>
-      <div class="modal-body">
-        <img src="Singapore.jpg" alt="Singapore" width="450px" height="300px">
-       <br>
-       <br>
-        Singapore is a modern and highly developed city-state located in Southeast Asia. Known for its clean environment, efficient public services, and strong economy, Singapore has become one of the world’s leading financial and business hubs. The country is made up of one main island and several smaller islands, and it is famous for its strategic location along major global trade routes.
-      <br>
-      <br>
-       Singapore is culturally diverse, with a population that includes Chinese, Malay, Indian, and many other ethnic communities. This multicultural mix is reflected in the country’s festivals, food, languages, and traditions. English is widely spoken and is the main language used in business and government.
-      The city is also known for its impressive skyline, including landmarks like Marina Bay Sands, Gardens by the Bay, and the Singapore Flyer. Despite being highly urbanized, Singapore maintains many green spaces and has a strong focus on sustainability.
-      <br>
-      <br>
-      Tourism plays an important role in the economy, attracting visitors to attractions such as Sentosa Island, the Singapore Zoo, and Orchard Road. The country is also recognized for its excellent education system, world-class healthcare, and safe living environment.
-      Overall, Singapore is a vibrant, efficient, and multicultural nation known for its innovation and quality of life.
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Tips">
+        <div class="card-body">
+          <h5 class="card-title">Travel Essentials</h5>
+          <p class="card-text">Packing ideas and smart tips for a worry-free travel journey.</p>
+          <a href="traveltip.html" class="btn btn-dark">Read Tips</a>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Photo Stories">
+        <div class="card-body">
+          <h5 class="card-title">Photo Stories</h5>
+          <p class="card-text">Beautiful photo collections from travelers around the world.</p>
+          <a href="gallery.html" class="btn btn-dark">View Gallery</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h3 class="fw-bold mb-3">Join Our Newsletter</h3>
+    <p>Stay updated with travel guides, tips, and new destinations around the globe.</p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-</div>
-<!-- This is the end of cards -->
+</section>
 
-<!-- Start of footer -->
- <!-- Footer -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
-          </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
-        <!-- Grid column -->
-      
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Tour Package</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
 <!-- Footer -->
+<footer class="bg-dark text-white py-3 text-center">
+  <p class="mb-0">© 2025 Travel The World. All Rights Reserved.</p>
+</footer>
 
-<!-- End of my footer -->
-</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
